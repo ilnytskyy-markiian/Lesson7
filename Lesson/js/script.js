@@ -75,3 +75,12 @@
 // Object.assign(User.prototype, message);
 
 // new User("Іван").messageHello();
+
+    //  const value = "Dynamic ";
+
+    //  const obj = {
+    //     key: "value",
+    //     [value + "key"]: "Something", // value + key === "Dynamic key"
+    //  };
+
+    //  console.log(obj); // Object { key: "value", "Dynamic key": "Something" }
