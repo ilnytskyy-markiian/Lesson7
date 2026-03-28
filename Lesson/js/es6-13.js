@@ -321,3 +321,70 @@
 // // }
 // console.log(obj);
 
+// Map та Set
+
+// Map
+
+// const myMap = new Map();
+
+// myMap.set("key", "value");
+
+// // Map:  value
+// console.log("Map:", myMap.get("key"));
+
+// // Set
+
+// const objectEntries = Object.entries({ name: "John", age: 30 });
+
+// const mySet = new Set(
+//     [objectEntries,
+//     1, 2, 3]
+// );
+
+// mySet.add(2, 7, 8); // Не спрацює
+// mySet.add([2, 3, 4, 5]); // Масив буде доданий як окремий елемент
+
+// // Set(5) [
+// //     // Об'єкт переданий як масив масивів
+// //     Array [
+// //         Array [ "name", "John" ],
+// //         Array [ "age", 30 ], 
+// //     ],
+// //     1, 2, 3, 
+// //     Array(4) [ 2, 3, 4, 5 ]
+// // ]
+// console.log("Set:", mySet);
+
+// const mySet2 = new Set(
+//     [...objectEntries,
+//     1, 2, 3]
+// );
+
+// // Set(5) [
+// //     // Тут вже вміст масиву було
+// //     // скопійовано в Set за
+// //     // допомогою оператора
+// //     // розширення    
+// //     Array [ "name", "John" ],
+// //     Array [ "age", 30 ],
+// //     1, 2, 3
+// // ]
+// console.log("Set 2:", mySet2);
+
+// Promises
+
+// const myPromise = new Promise((resolve, reject) => {
+//     // Затримає виконання коду на 2 секунди
+//     setTimeout(() => resolve("Promise completed!"), 2000);
+// });
+
+// myPromise.then((result) => console.log("Result of a promise:", result));
+
+// ES7
+
+// Array.includes()
+
+     const arr = [1, 3, 5, {name: "Victor"}];
+     
+     console.log(arr.includes(3)); // true
+     console.log(arr.includes({name: "Victor"})); // false
