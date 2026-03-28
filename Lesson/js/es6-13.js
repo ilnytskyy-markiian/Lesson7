@@ -384,7 +384,23 @@
 
 // Array.includes()
 
-     const arr = [1, 3, 5, {name: "Victor"}];
-     
-     console.log(arr.includes(3)); // true
-     console.log(arr.includes({name: "Victor"})); // false
+// const arr = [1, 3, 5, {name: "Victor"}];
+
+// console.log(arr.includes(3)); // true
+// console.log(arr.includes({name: "Victor"})); // false
+
+// Async/Await
+
+// async function myAsyncFunction() {
+//      const myPromise = new Promise((resolve, reject) => {
+//           setTimeout(() => resolve("Server responed"), 5000);
+//      });
+
+//      const result = await myPromise;
+//      console.log("Async/Await", result);
+// }
+
+// myAsyncFunction();
+
+// console.log(globalThis);
+
